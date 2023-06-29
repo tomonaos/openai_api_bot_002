@@ -31,10 +31,8 @@ def communicate():
 
 # ユーザーインターフェイスの構築
 st.title("AI面接官")
-#st.write("それでは面接を始めます。まずは自己紹介をお願いします。")
-if messages[0]:
-    msg = messages[0]
-st.write(msg["content"])
+st.write("それでは面接を始めます。まずは自己紹介をお願いします。")
+
 
 user_input = st.text_input("INPUT:", key="user_input", on_change=communicate)
 

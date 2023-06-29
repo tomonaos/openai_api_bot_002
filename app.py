@@ -33,7 +33,7 @@ def communicate():
 st.title("AI面接官")
 st.write("それでは面接を始めます。まずは自己紹介をお願いします。")
 
-user_input = st.text_input("入力してください。", key="user_input", on_change=communicate)
+user_input = st.text_input("INPUT:", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]

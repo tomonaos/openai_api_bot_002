@@ -31,9 +31,9 @@ def communicate():
 
 # ユーザーインターフェイスの構築
 st.title("AI面接官")
-st.write("ChatGPT APIを使った模擬面接用チャットボットです。")
+st.write("それでは面接を始めます。まずは自己紹介をお願いします。")
 
-user_input = st.text_input("それでは面接を始めます。まずは自己紹介をお願いします。", key="user_input", on_change=communicate)
+user_input = st.text_input("", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]

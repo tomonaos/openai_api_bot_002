@@ -1,6 +1,6 @@
 
 import streamlit as st
-import message from streamlit_chat
+from streamlit_chat import message
 import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得

@@ -1,6 +1,6 @@
 
 import streamlit as st
-from streamlit_chat import message
+#from streamlit_chat import message
 import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
@@ -49,5 +49,5 @@ if st.session_state["messages"]:
 
         st.write(speaker + ": " + message["content"])
 
-message("My message") 
-message("Hello bot!", is_user=True)  # align's the message to the right
+#message("My message") 
+#message("Hello bot!", is_user=True)  # align's the message to the right

@@ -5,7 +5,7 @@ import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
-
+bot_message_content = "XXX"
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
     bot_message_content = "それでは面接を始めます。まずは自己紹介をお願いします。"

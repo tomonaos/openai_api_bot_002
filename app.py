@@ -39,7 +39,7 @@ st.title("AI面接官")
 st.write(bot_message_content)
 
 
-user_input = st.text_input("INPUT:", key="user_input", on_change=communicate)
+user_input = st.text_input("", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]

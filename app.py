@@ -5,7 +5,6 @@ import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
-#bot_message_content = "それでは面接を始めます。まずは自己紹介をお願いします。"
 
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
@@ -30,7 +29,7 @@ def communicate():
     bot_message = response["choices"][0]["message"]
     messages.append(bot_message)
 
-    #bot_message_content = bot_message["content"]
+    bot_message_content = bot_message["content"]
 
     st.session_state["user_input"] = ""  # 入力欄を消去
 

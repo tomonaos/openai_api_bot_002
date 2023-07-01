@@ -39,8 +39,11 @@ st.title("AI面接官")
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
-    speaker="🤖"
-    st.write(speaker + ": " + messages[-1]["content"])
+    #speaker="🤖"
+    #st.write(speaker + ": " + messages[-1]["content"])
+
+    msg = st.chat_message("assistant")
+    msg.write(messages[-1]["content"])
 
 
 #user_input = st.text_input("", key="user_input", max_chars=150, on_change=communicate)

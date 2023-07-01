@@ -27,6 +27,7 @@ def communicate():
     )  
 
     bot_message = response["choices"][0]["message"]
+    bot_message_content = bot_message["content"]
     messages.append(bot_message)
 
     #bot_message_content = bot_message["content"]

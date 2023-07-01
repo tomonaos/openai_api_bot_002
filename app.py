@@ -38,8 +38,12 @@ def communicate():
 
 # ユーザーインターフェイスの構築
 st.title("AI面接官")
-st.write(bot_message_content)
 
+if st.session_state["messages"]:
+    messages = st.session_state["messages"]
+    reversed(messages)
+    st.write(messages[0]["content"])
+    
 
 user_input = st.text_input("", key="user_input", on_change=communicate)
 

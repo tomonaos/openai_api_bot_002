@@ -36,7 +36,7 @@ def communicate():
 
 # ユーザーインターフェイスの構築
 st.title("AI面接官")
-st.write(bot_message_content)
+st.write("bot_message_content")
 
 
 user_input = st.text_input("INPUT:", key="user_input", on_change=communicate)

@@ -41,8 +41,7 @@ st.title("AI面接官")
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
-    reversed(messages)
-    st.write(messages[0]["content"])
+    st.write(messages[-1]["content"])
     
 
 user_input = st.text_input("", key="user_input", on_change=communicate)

@@ -42,7 +42,7 @@ if st.session_state["messages"]:
     speaker="🤖"
     st.write(speaker + ": " + messages[-1]["content"])
     
-user_input = st.text_input("", key="user_input", max_chars=200, on_change=communicate)
+user_input = st.text_input("", key="user_input", max_chars=150, on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]

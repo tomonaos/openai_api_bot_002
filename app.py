@@ -47,8 +47,8 @@ if st.session_state["messages"]:
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
-
-    user_input = st.text_input("", key="user_input", max_chars=150, on_change=communicate)
+    if len(messages) < 5:
+        user_input = st.text_input("", key="user_input", max_chars=200, on_change=communicate)
 
     #for message in reversed(messages[1:]):  # 直近のメッセージを上に
     for message in messages[2:]:  # 

@@ -41,9 +41,10 @@ if st.session_state["messages"]:
     messages = st.session_state["messages"]
     #speaker="🤖"
     #st.write(speaker + ": " + messages[-1]["content"])
-
-    msg = st.chat_message("assistant")
-    msg.write(messages[-1]["content"])
+    ##msg = st.chat_message("assistant")
+    ##msg.write(messages[-1]["content"])
+    with st.chat_message("user"):
+        st.write("Hello 👋")
 
 
 #user_input = st.text_input("", key="user_input", max_chars=150, on_change=communicate)

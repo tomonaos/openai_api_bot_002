@@ -3,6 +3,8 @@ import streamlit as st
 from streamlit_chat import message
 import openai
 
+MAX_CHAT = 40
+
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 # st.session_stateを使いメッセージのやりとりを保存
@@ -51,7 +53,7 @@ if st.session_state["messages"]:
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
-    if len(messages) < 40:
+    if len(messages) < MAX_CHAT:
         user_input = st.text_input("", key="user_input", max_chars=200, on_change=communicate)
 
     #st.subheader("これまでのやりとり")

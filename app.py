@@ -54,7 +54,7 @@ if st.session_state["messages"]:
     if len(messages) < 40:
         user_input = st.text_input("", key="user_input", max_chars=200, on_change=communicate)
 
-    st.subheader("これまでのやりとり")
+    #st.subheader("これまでのやりとり")
     #for message in reversed(messages[1:]):  # 直近のメッセージを上に
     for message in messages[2:]:  # 
         

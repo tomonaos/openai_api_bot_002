@@ -37,10 +37,10 @@ st.title("AI面接官")
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
-    speaker="🤖"
-    st.write(speaker + ": " + messages[-1]["content"])
-    message("My message") 
-    message("Hello bot!", is_user=True)
+    #speaker="🤖"
+    #st.write(speaker + ": " + messages[-1]["content"])
+    message(messages[-1]["content"]) 
+    #message("Hello bot!", is_user=True)
     ###msg2 = st.chat_message("assistant")
     ##msg.write(messages[-1]["content"])
     ###with st.chat_message("user"):

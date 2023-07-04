@@ -39,7 +39,7 @@ if st.session_state["messages"]:
     messages = st.session_state["messages"]
     speaker="🤖"
     st.write(speaker + ": " + messages[-1]["content"])
-    msg = st.chat_message("assistant")
+    msg2 = st.chat_message("assistant")
     ##msg.write(messages[-1]["content"])
     ###with st.chat_message("user"):
         ###st.write("Hello 👋")

@@ -28,8 +28,6 @@ def communicate():
     
     messages.append(bot_message)
 
-    #bot_message_content = bot_message["content"]
-
     st.session_state["user_input"] = ""  # 入力欄を消去
 
 
@@ -41,7 +39,7 @@ if st.session_state["messages"]:
     messages = st.session_state["messages"]
     speaker="🤖"
     st.write(speaker + ": " + messages[-1]["content"])
-    ##msg = st.chat_message("assistant")
+    msg = st.chat_message("assistant")
     ##msg.write(messages[-1]["content"])
     ###with st.chat_message("user"):
         ###st.write("Hello 👋")

@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_chat import message
 import openai
 
-MAX_CHAT = 40
+MAX_CHAT = 30
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key

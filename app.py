@@ -11,7 +11,7 @@ openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {"role": "system", "content": "あなたは優秀な面接官です。就活生の回答に対して適切な質問をしてください。"},
-        {"role": "assistant", "content": "それでは面接を始めます。まずは自己紹介をお願いします。"}
+        {"role": "assistant", "content": "今日はどのようなご相談でいらっしゃいましたか？"}
         ]
 
 # チャットボットとやりとりする関数
@@ -35,7 +35,7 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-st.title("AI面接官")
+st.title("AIキャリコン")
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]

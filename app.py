@@ -35,7 +35,7 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-st.title("AIキャリコン")
+st.title("AI相談員")
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
